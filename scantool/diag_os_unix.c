@@ -257,7 +257,7 @@ int diag_os_close() {
 	diag_os_init_done = 0;
 	return 0;
 
-}       //diag_os_close
+}       //diag_os_close(void)
 
 
 //return after (ms) milliseconds.

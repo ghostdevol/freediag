@@ -161,7 +161,7 @@ void diag_l2_addmsg(struct diag_l2_conn *d_l2_conn, struct diag_msg *msg) {
 /*
  * Init called to initialise local structures
  */
-int diag_l2_init() {
+int diag_l2_init(void) {
 
 	if (l2internal.init_done) {
 		return 0;

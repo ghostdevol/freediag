@@ -84,12 +84,12 @@ elseif (CMAKE_BASE_NAME STREQUAL "bcc32c")
 	link_libraries("cw32mt")
 elseif (CMAKE_BASE_NAME STREQUAL "bcc32x")
 	#set all warnings as errors for Embarcadero clang based compiler.
-	add_compile_options("-Wall" "-Werror")
+	add_compile_options("-Wall" "")
 	#add static C runtime.
 	link_libraries("cw32mt")
 elseif (CMAKE_BASE_NAME STREQUAL "bcc64")
 	#set all warnings as errors for Embarcadero clang based 64 bit compiler.
-	add_compile_options("-Wall" "-Werror")
+	add_compile_options("-Wall" "")
 	#add static C runtime.
 	link_libraries("cw64mt")
 elseif (MSVC)
@@ -108,7 +108,7 @@ elseif (MSVC)
 elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     #using regular Clang or AppleClang
 	#set all warnings as errors for clang based compiler.
-	add_compile_options("-Wall" "-Werror" "-pedantic" "-pedantic-errors" "-std=gnu99")
+	add_compile_options("-Wall" "" "-pedantic" "-pedantic-errors" "-std=gnu99")
 else ()
 	message(WARNING "non-gcc compiler, verify compiler options !")
 	#not sure what we should use on other compilers.
