@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/MSYS2/home/Lenovo/freediag/cmake_install.cmake",
-		"C:/MSYS2/home/Lenovo/freediag/scantool/cmake_install.cmake",
-		"C:/MSYS2/home/Lenovo/freediag/tests/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
