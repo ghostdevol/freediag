@@ -1,0 +1,5 @@
+
+lrm -rf build/*
+rm -f CMakeCache.txt
+mkdir -p build
+cd build
